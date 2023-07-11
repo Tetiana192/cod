@@ -1,0 +1,23 @@
+class SyntheticFabric:
+    def __init__(self, name, material_type, advantages):
+        self.name = name
+        self.material_type = material_type
+        self.advantages = advantages
+
+    def display_info(self):
+        print(f"Name: {self.name}")
+        print(f"Material Type: {self.material_type}")
+        print(f"Advantages: {', '.join(self.advantages)}")
+        print()
+
+
+# Creating synthetic fabric instances
+fabric1 = SyntheticFabric("Nylon", "Polyamide", ["Durability", "Water resistance", "Lightweight"])
+fabric2 = SyntheticFabric("Polyester", "Polyester", ["Wrinkle resistance", "Quick-drying", "Versatility"])
+fabric3 = SyntheticFabric("Acrylic", "Polyacrylic", ["Softness", "Warmth", "Colorfastness"])
+
+# Displaying information about synthetic fabrics
+print("Synthetic Fabrics Information:")
+fabric1.display_info()
+fabric2.display_info()
+fabric3.display_info()
